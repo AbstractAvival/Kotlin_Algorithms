@@ -13,13 +13,16 @@ fun shellSort( unsortedArray: Array< Int > ) {
     var interval = unsortedArray.size / 2
     while( interval > 0 ) {
         for( currentIndex in 0..interval ) {
-            for( sortPosition in currentIndex..unsortedArray.size step interval ) {
+            for( sortPosition in currentIndex until unsortedArray.size step interval ) {
                 val placeholder = unsortedArray[ sortPosition ]
                 var reversePosition = sortPosition
                 while( reversePosition >= interval ) {
                     if( unsortedArray[ reversePosition - interval ] > placeholder ) {
                         unsortedArray[ reversePosition ] = unsortedArray[ reversePosition - interval ]
+                    } else {
+                        break
                     }
+                    reversePosition -= interval
                 }
                 unsortedArray[ reversePosition ] = placeholder
             }
