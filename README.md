@@ -1,6 +1,6 @@
 # Kotlin_Algorithms
 
-Algorithm implementations using Kotlin programming language. I am currently reviewing algorithms on my free time and figured I could
+Algorithm implementations using the Kotlin programming language. I am currently reviewing algorithms on my free time and figured I could
 use them as exercises and practice. I will add algorithm implementations when I can. 
 
 
@@ -14,3 +14,4 @@ Algorithms that are used to rearrange a given array or list elements according t
 | ---- | ------------- |
 | Selection Sort | [Kotlin_Algorithms/sortingAlgorithms/SelectionSort](https://github.com/AbstractAvival/Kotlin_Algorithms/blob/master/src/main/kotlin/sortingAlgorithms/SelectionSort.kt) |
 | Insertion Sort | [Kotlin_Algorithms/sortingAlgorithms/InsertionSort](https://github.com/AbstractAvival/Kotlin_Algorithms/blob/master/src/main/kotlin/sortingAlgorithms/InsertionSort.kt) |
+| Shell Sort | [Kotlin_Algorithms/sortingAlgorithms/ShellSort](https://github.com/AbstractAvival/Kotlin_Algorithms/blob/master/src/main/kotlin/sortingAlgorithms/ShellSort.kt) |
