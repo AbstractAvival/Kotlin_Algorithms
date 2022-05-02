@@ -23,5 +23,34 @@ fun mergeSublists( unsortedArray: Array< Int >, initialIndex: Int, middleIndex: 
     val firstArraySize = middleIndex - initialIndex + 1
     val secondArraySize = finalIndex - middleIndex
 
-    val firstArray = arrayListOf< Int >()
+    val firstArray = unsortedArray.copyOfRange( initialIndex, middleIndex + 1 )
+    val secondArray = unsortedArray.copyOfRange( middleIndex + 1, finalIndex + 1 )
+
+    var firstArrayIndex = 0
+    var secondArrayIndex = 0
+    var mergedArrayIndex = initialIndex
+
+    while( firstArrayIndex < firstArraySize && secondArrayIndex < secondArraySize ) {
+        if( firstArray[ firstArrayIndex ] < secondArray[ secondArrayIndex ] ) {
+            unsortedArray[ mergedArrayIndex ] =  firstArray[ firstArrayIndex ]
+            firstArrayIndex++
+        }
+        else {
+            unsortedArray[ mergedArrayIndex ] =  secondArray[ secondArrayIndex ]
+            secondArrayIndex++
+        }
+        mergedArrayIndex++
+    }
+
+    while( firstArrayIndex < firstArraySize ) {
+        unsortedArray[ mergedArrayIndex ] =  firstArray[ firstArrayIndex ]
+        firstArrayIndex++
+        mergedArrayIndex++
+    }
+
+    while( secondArrayIndex < secondArraySize ) {
+        unsortedArray[ mergedArrayIndex ] =  secondArray[ secondArrayIndex ]
+        secondArrayIndex++
+        mergedArrayIndex++
+    }
 }
