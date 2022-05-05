@@ -10,11 +10,11 @@ fun quickSort( unsortedArray: Array< Int >, startIndex: Int, endIndex: Int ) {
 }
 
 fun Partition( unsortedArray: Array< Int >, startIndex: Int, endIndex: Int ) : Int {
-    val pivotValue = unsortedArray[ endIndex ]
+    var pivotValue = unsortedArray[ endIndex ]
     var currentPivotIndex = startIndex - 1
 
-    for( currentIndex in unsortedArray.indices ) {
-        if( unsortedArray[ currentIndex ] < pivotValue ) {
+    for( currentIndex in startIndex until endIndex ) {
+        if( unsortedArray[ currentIndex ] <= pivotValue ) {
             currentPivotIndex++
             unsortedArray[ currentIndex ] = unsortedArray[ currentPivotIndex ].also {
                 unsortedArray[ currentPivotIndex ] = unsortedArray[ currentIndex ]
