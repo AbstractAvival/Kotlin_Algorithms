@@ -22,7 +22,7 @@ fun Partition( unsortedArray: Array< Int >, startIndex: Int, endIndex: Int ) : I
     var currentPivotIndex = startIndex - 1
 
     for( currentIndex in startIndex until endIndex ) {
-        if( unsortedArray[ currentIndex ] <= pivotValue ) {
+        if( unsortedArray[ currentIndex ] < pivotValue ) {
             currentPivotIndex++
             unsortedArray[ currentIndex ] = unsortedArray[ currentPivotIndex ].also {
                 unsortedArray[ currentPivotIndex ] = unsortedArray[ currentIndex ]
