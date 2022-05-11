@@ -12,6 +12,7 @@ Algorithms that are used to rearrange a given array or list elements according t
 
 | Name | File Location |
 | ---- | ------------- |
+| Bubble Sort | [Kotlin_Algorithms/sortingAlgorithms/BubbleSort](https://github.com/AbstractAvival/Kotlin_Algorithms/blob/master/src/main/kotlin/sortingAlgorithms/BubbleSort.kt) |
 | Selection Sort | [Kotlin_Algorithms/sortingAlgorithms/SelectionSort](https://github.com/AbstractAvival/Kotlin_Algorithms/blob/master/src/main/kotlin/sortingAlgorithms/SelectionSort.kt) |
 | Insertion Sort | [Kotlin_Algorithms/sortingAlgorithms/InsertionSort](https://github.com/AbstractAvival/Kotlin_Algorithms/blob/master/src/main/kotlin/sortingAlgorithms/InsertionSort.kt) |
 | Shell Sort | [Kotlin_Algorithms/sortingAlgorithms/ShellSort](https://github.com/AbstractAvival/Kotlin_Algorithms/blob/master/src/main/kotlin/sortingAlgorithms/ShellSort.kt) |
